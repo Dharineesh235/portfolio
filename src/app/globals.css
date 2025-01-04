@@ -1,21 +1,65 @@
+@import "@fontsource/montserrat";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
+
+  .header,
+  .main .profile,
+  .main .about-me {
+    padding-left: 16px;
+    padding-right: 16px;
+
+    @media screen and (min-width: 1400px) {
+      padding: 0 calc((100vw - 1360px) / 2);
+    }
+
+    @media screen and (min-width: 1200px) and (max-width: 1400px) {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+
+    @media screen and (min-width: 992px) and (max-width: 1200px) {
+      padding-left: 36px;
+      padding-right: 36px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      padding-left: 44px;
+      padding-right: 44px;
+    }
+  }
+
+  .main {
+
+    .profile,
+    .about-me {
+      padding-top: 24px;
+      padding-bottom: 24px;
+
+      @media screen and (min-width: 992px) {
+        padding-top: 130px;
+        padding-bottom: 130px;
+      }
+
+      @media screen and (min-width: 768px) and (max-width: 992px) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+      }
+    }
+
+    .about-me {
+      @media screen and (max-width: 768px) {
+        padding-top: 36px;
+        padding-bottom: 36px;
+      }
+    }
+
+    .about-me-content {
+      text-align: justify;
+    }
+  }
 }

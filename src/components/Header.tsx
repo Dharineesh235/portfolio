@@ -10,15 +10,14 @@ const Header = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <nav className="bg-white shadow-md w-full z-10">
-      <div className="container mx-auto px-4 flex justify-between items-center h-16">
+    <nav className="text-white shadow-md w-full header" style={{ backgroundColor: '#1F242D' }}>
+      <div className="flex justify-between items-center h-16">
         <div className="text-2xl font-bold">LOGO</div>
         <div className="hidden md:flex space-x-6">
-            <a>dfghj</a>
-          <Link href="/"className="text-gray-700 hover:text-blue-600">Home</Link>
-          <Link href="/about" className="text-gray-700 hover:text-blue-600">About</Link>
-          <Link href="/services" className="text-gray-700 hover:text-blue-600">Services</Link>
-          <Link href="/contact" className="text-gray-700 hover:text-blue-600">Contact</Link>
+          <Link href="/" >Home</Link>
+          <Link href="/about" >About</Link>
+          <Link href="/services" >Services</Link>
+          <Link href="/contact" >Contact</Link>
         </div>
         <div className="md:hidden" onClick={handleClick}>
           {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
