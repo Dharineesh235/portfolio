@@ -14,7 +14,7 @@ const MySkills = () => {
     },
     {
       skill: 'JavaScript TypeScript',
-      progress: 80,
+      progress: 75,
     },
     {
       skill: 'React JS',
@@ -43,13 +43,17 @@ const MySkills = () => {
   ];
 
   return (
-    <div style={{ backgroundColor: '#1F242D' }}>
+    <div style={{ backgroundColor: '#1F242D' }} className='skill'>
       <h2 className='text-2xl md:text-4xl lg:text-6xl font-bold text-center text-white'>My <span className='text-yellow-500'>Skills</span></h2>
-      <>
-        {skills.map((item) => (
-          <ProgressBar skill={item?.skill} progress={item?.progress} />
-        ))}
-      </>
+      <div className='grid grid-cols-1 lg:grid-cols-2 gap-x-20 gap-y-3 mt-6 lg:mt-16'>
+        {skills.map((item) => {
+          return (
+            <div key={item?.skill} className='mb-3 lg:mb-0' >
+              <ProgressBar skill={item?.skill} progress={item?.progress} />
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }

@@ -9,7 +9,9 @@ body {
 
   .header,
   .main .profile,
-  .main .about-me {
+  .main .about-me,
+  .main .skill,
+  .main .service {
     padding-left: 16px;
     padding-right: 16px;
 
@@ -34,27 +36,21 @@ body {
   }
 
   .main {
-
     .profile,
-    .about-me {
-      padding-top: 24px;
-      padding-bottom: 24px;
+    .about-me,
+    .skill,
+    .service {
+      padding-top: 36px;
+      padding-bottom: 36px;
 
       @media screen and (min-width: 992px) {
-        padding-top: 130px;
-        padding-bottom: 130px;
+        padding-top: 100px;
+        padding-bottom: 100px;
       }
 
       @media screen and (min-width: 768px) and (max-width: 992px) {
         padding-top: 80px;
         padding-bottom: 80px;
-      }
-    }
-
-    .about-me {
-      @media screen and (max-width: 768px) {
-        padding-top: 36px;
-        padding-bottom: 36px;
       }
     }
 

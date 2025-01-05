@@ -1,5 +1,6 @@
 import AboutMe from "@/components/AboutMe";
 import Main from "@/components/Main";
+import MyServices from "@/components/MyServices";
 import MySkills from "@/components/MySkills";
 import Profile from "@/components/Profile";
 
@@ -9,6 +10,7 @@ export default function Home() {
       <Profile />
       <AboutMe />
       <MySkills />
+      <MyServices />
     </Main>
   );
 }

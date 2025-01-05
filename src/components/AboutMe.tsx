@@ -91,7 +91,7 @@ export const AboutMe = () => {
             </div>
           </div>
         </div>
-        <div className='my-8 lg:my-0 col-span-5'>
+        <div className='mt-8 lg:mt-0 col-span-5'>
           <div className='flex about-me-button-wrapper'>
             {details.map((detail, index) => {
               return (

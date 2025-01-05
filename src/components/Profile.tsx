@@ -5,7 +5,7 @@ const Profile = () => {
     <div style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/images/portfolio-bg-img.png')`, objectFit: 'contain', backgroundSize: 'cover', backgroundPosition: 'center', height: '100%' }}>
       <div className='sm:flex justify-between items-center profile text-white'>
         <div className='col-span-8'>
-          <p className='text-yellow-500 text-xl pt-2 md:pt-0 font-semibold'>Hello!</p>
+          <p className='text-yellow-500 text-xl font-semibold'>Hello!</p>
           <h1 className='profile-name text-2xl md:text-4xl lg:text-6xl font-bold my-3 md:my-4'>I'm <span className='text-yellow-500'>Lakshmi Narasimman V</span></h1>
           <h2 className='profile-tech text-xl md:text-3xl lg:text-5xl font-semibold my-3 md:my-4'>A Frontend Developer</h2>
         </div>
