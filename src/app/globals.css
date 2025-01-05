@@ -59,7 +59,14 @@ body {
     }
 
     .about-me-content {
-      text-align: justify;
+      @media screen and (max-width: 768px) {
+        text-align: justify;
+      }
+    }
+
+    .about-me-button-wrapper {
+      overflow-x: auto;
+      white-space: nowrap;
     }
   }
 }

@@ -1,5 +1,6 @@
 import AboutMe from "@/components/AboutMe";
 import Main from "@/components/Main";
+import MySkills from "@/components/MySkills";
 import Profile from "@/components/Profile";
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
     <Main>
       <Profile />
       <AboutMe />
+      <MySkills />
     </Main>
   );
 }
