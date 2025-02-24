@@ -173,3 +173,12 @@ body {
   transform: translateY(0);
 
 }
+
+.input{
+ border-bottom: 1px solid grey;
+ width: 100%;
+ outline: none;
+}
+.input:focus{
+  border-bottom: 2px solid rgba(2, 132, 199);
+}

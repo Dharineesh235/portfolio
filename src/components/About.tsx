@@ -17,7 +17,7 @@ const About = () => {
             <div className='flex flex-col items-center gap-10'>
                 <h1 className='font-bold text-3xl'>Let me introduce myself.</h1>
                 <p className='text-center text-bodytext text-xs md:text-lg'>
-                    I am studying in computer science engineering, with a great interest in Web developing, Network Security, Frontend, Artificial intelligence and software development. I have curiosity to learn new things related to my field and explore further opportunities. Looking for a great intership to achieve my goals in Computer Science Engineering. I have good management and communication skills.
+                    I am Full stack developer with, with a great interest in Web developing, Network Security, Frontend, Artificial intelligence and software development. I have curiosity to learn new things related to my field and explore further opportunities. Looking for a great intership to achieve my goals in Computer Science Engineering. I have good management and communication skills.
                 </p>
                 <div className=' grid grid-cols-2 auto-cols-auto text-left gap-y-3'>
                     {/* <div className='flex gap-2 justify-center align-center'> */}

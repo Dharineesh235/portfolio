@@ -11,61 +11,61 @@ const Services: React.FC = () => {
         <div
           style={{ background: 'rgb(225, 225, 225, 0.3)', width:'250px'}}
           className='gap-10 p-5 bg-dark_transparent flex flex-col align-center justify-center rounded-lg'>
-          <div className='text-center flex justify-center'><Image src="/images/Web-Development.svg" style={{color:"white"}} width={50} alt="" /></div>
+          <div className='text-center flex justify-center'><Image src="/images/Web-Development.svg" style={{color:"white"}} width={50} height={50} alt="" /></div>
           <h1 className='text-center'>Web Development</h1>
         </div>
         <div
           style={{ background: 'rgb(225, 225, 225, 0.3)', width:'250px' }}
           className='gap-10 p-5 bg-dark_transparent flex flex-col align-center justify-center rounded-lg'>
-          <div className='text-center flex justify-center'><Image src="/images/API_Development.svg" style={{color:"white"}} width={50} alt="" /></div>
+          <div className='text-center flex justify-center'><Image src="/images/API_Development.svg" style={{color:"white"}} width={50} height={50} alt="" /></div>
           <h1 className='text-center'>API Development</h1>
         </div>
         <div
           style={{ background: 'rgb(225, 225, 225, 0.3)', width:'250px' }}
           className='gap-10 p-5 bg-dark_transparent flex flex-col align-center justify-center rounded-lg'>
-          <div className='text-center flex justify-center'><Image src="/images/API-Integration.svg" style={{color:"white"}} width={50} alt="" /></div>
+          <div className='text-center flex justify-center'><Image src="/images/API-Integration.svg" style={{color:"white"}} width={50} height={50} alt="" /></div>
           <h1 className='text-center'>API Integration</h1>
         </div>
         <div
           style={{ background: 'rgb(225, 225, 225, 0.3)', width:'250px' }}
           className='gap-10 p-5 bg-dark_transparent flex flex-col align-center justify-center rounded-lg'>
-          <div className='text-center flex justify-center'><Image src="/images/API-Development.svg" style={{color:"white"}} width={50} alt="" /></div>
+          <div className='text-center flex justify-center'><Image src="/images/API-Development.svg" style={{color:"white"}} width={50} height={50} alt="" /></div>
           <h1 className='text-center'>API Testing</h1>
         </div>
         <div
           style={{ background: 'rgb(225, 225, 225, 0.3)', width:'250px' }}
           className='gap-10 p-5 bg-dark_transparent flex flex-col align-center justify-center rounded-lg'>
-          <div className='text-center flex justify-center'><Image src="/images/git.svg" style={{color:"white"}} width={50} alt="" /></div>
+          <div className='text-center flex justify-center'><Image src="/images/git.svg" style={{color:"white"}} width={50} height={50} alt="" /></div>
           <h1 className='text-center'>Version Control</h1>
         </div>
         <div
           style={{ background: 'rgb(225, 225, 225, 0.3)', width:'250px' }}
           className='gap-10 p-5 bg-dark_transparent flex flex-col align-center justify-center rounded-lg'>
-          <div className='text-center flex justify-center'><Image src="/images/optimization.svg" style={{color:"white"}} width={50} alt="" /></div>
+          <div className='text-center flex justify-center'><Image src="/images/optimization.svg" style={{color:"white"}} width={50} height={50} alt="" /></div>
           <h1 className='text-center'>Maintenance & Optimization</h1>
         </div>
         <div
           style={{ background: 'rgb(225, 225, 225, 0.3)', width:'250px' }}
           className='gap-10 p-5 bg-dark_transparent flex flex-col align-center justify-center rounded-lg'>
-          <div className='text-center flex justify-center'><Image src="/images/database.svg" style={{color:"white"}} width={50} alt="" /></div>
+          <div className='text-center flex justify-center'><Image src="/images/database.svg" style={{color:"white"}} width={50} height={50} alt="" /></div>
           <h1 className='text-center'>Database Management</h1>
         </div>
         <div
           style={{ background: 'rgb(225, 225, 225, 0.3)', width:'250px' }}
           className='gap-10 p-5 bg-dark_transparent flex flex-col align-center justify-center rounded-lg'>
-          <div className='text-center flex justify-center'><Image src="/images/schedule.svg" style={{color:"white"}} width={50} alt="" /></div>
+          <div className='text-center flex justify-center'><Image src="/images/schedule.svg" style={{color:"white"}} width={50} height={50} alt="" /></div>
           <h1 className='text-center'>Job Scheduling & Task Automation</h1>
         </div>
         <div
           style={{ background: 'rgb(225, 225, 225, 0.3)', width:'250px' }}
           className='gap-10 p-5 bg-dark_transparent flex flex-col align-center justify-center rounded-lg'>
-          <div className='text-center flex justify-center'><Image src="/images/microservice.svg" style={{color:"white"}} width={50} alt="" /></div>
+          <div className='text-center flex justify-center'><Image src="/images/microservice.svg" style={{color:"white"}} width={50} height={50} alt="" /></div>
           <h1 className='text-center'>Microservices Architecture</h1>
         </div>
         <div
           style={{ background: 'rgb(225, 225, 225, 0.3)', width:'250px' }}
           className='gap-10 p-5 bg-dark_transparent flex flex-col align-center justify-center rounded-lg'>
-          <div className='text-center flex justify-center'><Image src="/images/monitoring.svg" style={{color:"white"}} width={50} alt="" /></div>
+          <div className='text-center flex justify-center'><Image src="/images/monitoring.svg" style={{color:"white"}} width={50} height={50} alt="" /></div>
           <h1 className='text-center'>Logging & Monitoring</h1>
         </div>
       </div>

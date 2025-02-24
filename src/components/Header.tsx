@@ -23,7 +23,7 @@ const Header = () => {
           <div><Link href="/about" className="text-gray-200 hover:text-blue-600">About</Link></div>
           <div><Link href="/services" className="text-gray-200 hover:text-blue-600">Services</Link></div>
           <div><Link href="/services" className="text-gray-200 hover:text-blue-600">Resume</Link></div>
-          <div><Link href="/services" className="text-gray-200 hover:text-blue-600">Project</Link></div>
+          <div><Link href="/Projects" className="text-gray-200 hover:text-blue-600">Project</Link></div>
           <div> <Link href="/contact" className="text-gray-200 hover:text-blue-600">Contact</Link></div>
         </div>
         <div className="md:hidden" onClick={handleClick}>
