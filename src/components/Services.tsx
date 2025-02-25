@@ -62,12 +62,12 @@ const Services: React.FC = () => {
           <div className='text-center flex justify-center'><Image src="/images/microservice.svg" style={{color:"white"}} width={50} height={50} alt="" /></div>
           <h1 className='text-center'>Microservices Architecture</h1>
         </div>
-        <div
+        {/* <div
           style={{ background: 'rgb(225, 225, 225, 0.3)', width:'250px' }}
           className='gap-10 p-5 bg-dark_transparent flex flex-col align-center justify-center rounded-lg'>
           <div className='text-center flex justify-center'><Image src="/images/monitoring.svg" style={{color:"white"}} width={50} height={50} alt="" /></div>
           <h1 className='text-center'>Logging & Monitoring</h1>
-        </div>
+        </div> */}
       </div>
     </div>
   )

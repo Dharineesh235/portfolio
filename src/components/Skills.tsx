@@ -43,43 +43,43 @@ const Skills = () => {
                     </div><div className='flex flex-col justify-center'>
                         <div className='font-bold text-xl mb-1 text-texthead'>Next.js</div>
                         <div style={{ height: '7px', overflow: 'hidden', margin: 0, padding: 0 }} className="rounded range-container bg-neutral-500">
-                            <div style={{ width: '90%', margin: 0, padding: 0 }} className='bg-primary'>.</div>
+                            <div style={{ width: '60%', margin: 0, padding: 0 }} className='bg-primary'>.</div>
                         </div>
                     </div>
                     <div className='flex flex-col justify-center'>
                         <div className='font-bold text-xl mb-1 text-texthead'>TypeScript</div>
                         <div style={{ height: '7px', overflow: 'hidden', margin: 0, padding: 0 }} className="rounded range-container bg-neutral-500">
-                            <div style={{ width: '90%', margin: 0, padding: 0 }} className='bg-primary'>.</div>
+                            <div style={{ width: '60%', margin: 0, padding: 0 }} className='bg-primary'>.</div>
                         </div>
                     </div>
                     <div className='flex flex-col justify-center'>
                         <div className='font-bold text-xl mb-1 text-texthead'>Bootstrap</div>
                         <div style={{ height: '7px', overflow: 'hidden', margin: 0, padding: 0 }} className="rounded range-container bg-neutral-500">
-                            <div style={{ width: '90%', margin: 0, padding: 0 }} className='bg-primary'>.</div>
+                            <div style={{ width: '50%', margin: 0, padding: 0 }} className='bg-primary'>.</div>
                         </div>
                     </div>
                     <div className='flex flex-col justify-center'>
                         <div className='font-bold text-xl mb-1 text-texthead'>Tailwind CSS</div>
                         <div style={{ height: '7px', overflow: 'hidden', margin: 0, padding: 0 }} className="rounded range-container bg-neutral-500">
-                            <div style={{ width: '90%', margin: 0, padding: 0 }} className='bg-primary'>.</div>
+                            <div style={{ width: '60%', margin: 0, padding: 0 }} className='bg-primary'>.</div>
                         </div>
                     </div>
                     <div className='flex flex-col justify-center'>
                         <div className='font-bold text-xl mb-1 text-texthead'>Java</div>
                         <div style={{ height: '7px', overflow: 'hidden', margin: 0, padding: 0 }} className="rounded range-container bg-neutral-500">
-                            <div style={{ width: '90%', margin: 0, padding: 0 }} className='bg-primary'>.</div>
+                            <div style={{ width: '50%', margin: 0, padding: 0 }} className='bg-primary'>.</div>
                         </div>
                     </div>
                     <div className='flex flex-col justify-center'>
                         <div className='font-bold text-xl mb-1 text-texthead'>Python</div>
                         <div style={{ height: '7px', overflow: 'hidden', margin: 0, padding: 0 }} className="rounded range-container bg-neutral-500">
-                            <div style={{ width: '90%', margin: 0, padding: 0 }} className='bg-primary'>.</div>
+                            <div style={{ width: '50%', margin: 0, padding: 0 }} className='bg-primary'>.</div>
                         </div>
                     </div>
                     <div className='flex flex-col justify-center'>
                         <div className='font-bold text-xl mb-1 text-texthead'>Flask</div>
                         <div style={{ height: '7px', overflow: 'hidden', margin: 0, padding: 0 }} className="rounded range-container bg-neutral-500">
-                            <div style={{ width: '90%', margin: 0, padding: 0 }} className='bg-primary'>.</div>
+                            <div style={{ width: '50%', margin: 0, padding: 0 }} className='bg-primary'>.</div>
                         </div>
                     </div>
                     <div className='flex flex-col justify-center'>
@@ -91,7 +91,7 @@ const Skills = () => {
                     <div className='flex flex-col justify-center'>
                         <div className='font-bold text-xl mb-1 text-texthead'>PostgreSQL</div>
                         <div style={{ height: '7px', overflow: 'hidden', margin: 0, padding: 0 }} className="rounded range-container bg-neutral-500">
-                            <div style={{ width: '90%', margin: 0, padding: 0 }} className='bg-primary'>.</div>
+                            <div style={{ width: '80%', margin: 0, padding: 0 }} className='bg-primary'>.</div>
                         </div>
                     </div>
                     <div className='flex flex-col justify-center'>
@@ -115,13 +115,13 @@ const Skills = () => {
                     <div className='flex flex-col justify-center'>
                         <div className='font-bold text-xl mb-1 text-texthead'>Docker & Docker-compose</div>
                         <div style={{ height: '7px', overflow: 'hidden', margin: 0, padding: 0 }} className="rounded range-container bg-neutral-500">
-                            <div style={{ width: '90%', margin: 0, padding: 0 }} className='bg-primary'>.</div>
+                            <div style={{ width: '60%', margin: 0, padding: 0 }} className='bg-primary'>.</div>
                         </div>
                     </div>
                     <div className='flex flex-col justify-center'>
                         <div className='font-bold text-xl mb-1 text-texthead'>Linux/Unix</div>
                         <div style={{ height: '7px', overflow: 'hidden', margin: 0, padding: 0 }} className="rounded range-container bg-neutral-500">
-                            <div style={{ width: '90%', margin: 0, padding: 0 }} className='bg-primary'>.</div>
+                            <div style={{ width: '50%', margin: 0, padding: 0 }} className='bg-primary'>.</div>
                         </div>
                     </div>
                 </div>
