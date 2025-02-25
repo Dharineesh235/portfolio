@@ -3,14 +3,14 @@
 import nodemailer from 'nodemailer';
 import { NextRequest, NextResponse } from 'next/server';
 
-export async function GET(request:NextRequest) {
+export async function GET() {
   return NextResponse.json({ message: 'Hello, world!' });
 }
 
 export async function POST(request: NextRequest) {
   const { to, subject, text } = await request.json();
 
-  let transporter = nodemailer.createTransport({
+  const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
       user: process.env.EMAIL_USER,
@@ -18,17 +18,15 @@ export async function POST(request: NextRequest) {
     },
   });
 
-  // Set up email data
-  let mailOptions = {
+  const mailOptions = {
     from: process.env.EMAIL_USER, // Sender address
     to, // List of receivers
     subject, // Subject line
     text, // Plain text body
   };
 
-  // Send mail with defined transport object
   try {
-    let info = await transporter.sendMail(mailOptions);
+    const info = await transporter.sendMail(mailOptions);
     return NextResponse.json({ message: 'Email sent', info });
   } catch (error) {
     return NextResponse.json({ message: 'Error sending email', error });

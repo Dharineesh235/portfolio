@@ -7,27 +7,31 @@ const Projects = () => {
             name:"Zomato Clone", 
             description:"During my internship, I developed a Zomato Clone, a full-stack food ordering web application designed to provide a seamless experience for users to browse restaurants, explore menus, and place orders online.",
             url:"/images/zomato_clone.jpeg",
-            visit:"https://github.com/Dharineesh235"
+            visit:"https://github.com/Dharineesh235/Zomato_Project"
         },
         {
             name:"Snake Game", 
             description:"During my internship, I developed a Zomato Clone, a full-stack food ordering web application designed to provide a seamless experience for users to browse restaurants, explore menus, and place orders online.",
-            url:"/images/snake_game.jpeg"
+            url:"/images/snake_game.jpeg",
+            visit:"https://github.com/Dharineesh235/snake_game"
         },
         {
             name:"Book Stack", 
             description:"During my internship, I developed a Zomato Clone, a full-stack food ordering web application designed to provide a seamless experience for users to browse restaurants, explore menus, and place orders online.",
-            url:"/images/book_stack.jpeg"
+            url:"/images/book_stack.jpeg",
+            visit:"https://github.com/Dharineesh235/bookSearch_react"
         },
         {
             name:"Turtle Race",
             description:"During my internship, I developed a Zomato Clone, a full-stack food ordering web application designed to provide a seamless experience for users to browse restaurants, explore menus, and place orders online.",
-            url:"/images/turtle_race.jpeg"
+            url:"/images/turtle_race.jpeg",
+            visit:"https://github.com/Dharineesh235/turtle_race"
         },
         {
             name:"Day Light Automator", 
             description:"During my internship, I developed a Zomato Clone, a full-stack food ordering web application designed to provide a seamless experience for users to browse restaurants, explore menus, and place orders online.",
-            url:"/images/day-light.jpg"
+            url:"/images/day-light.jpg",
+            visit:"https://github.com/Dharineesh235/daylight_automator"
         },
     ]
     return (
@@ -50,7 +54,7 @@ const Projects = () => {
                         <div className='flex flex-col gap-10 justify-center items-center'>
                             <h1 className='text-3xl font-black'>{item.name}</h1>
                             <p className='text-center text-bodytext text-xs md:text-lg'>{item.description}</p>
-                            <div className='bg-primary_transparent p-2 rounded w-1/6 text-center'><a href="https://google.com" target='_blank'>VIEW</a></div>
+                            <div className='bg-primary_transparent p-2 rounded w-1/6 text-center'><a href={item.visit} target='_blank'>VIEW</a></div>
                         </div>
                     </div>
                 </div>)}

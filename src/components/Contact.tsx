@@ -19,7 +19,8 @@ const Contact = () => {
             // backgroundImage: `url(${imageUrl})`,
             // backgroundAttachment: 'fixed',
             backgroundPosition: 'center',
-            transition: 'all 0.1s linear'
+            transition: 'all 0.1s linear',
+            paddingBottom:"30px"
           }}
         className='w-full flex flex-col items-center h-lvh bg-gradient-to-b from-neutral-700 to-transparent gap-5 pt-20 md:px-20 border-t-2 border-solid border-neutral-600'>
             <h1 className="text-3xl font-extrabold text-primary"><u>CONTACT</u></h1>
