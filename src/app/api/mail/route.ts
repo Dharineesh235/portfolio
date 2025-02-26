@@ -8,8 +8,8 @@ export async function GET() {
 }
 
 export async function POST(request: NextRequest) {
-  const { to, subject, text } = await request.json();
-
+  const { name, subject, message, email } = await request.json();
+  const to = process.env.MAIN_EMAIL;
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
@@ -21,8 +21,8 @@ export async function POST(request: NextRequest) {
   const mailOptions = {
     from: process.env.EMAIL_USER, // Sender address
     to, // List of receivers
-    subject, // Subject line
-    text, // Plain text body
+    subject: `PORTFOLIO ${subject}`, // Subject line
+    message:`${name}\n${message}\nSender Email :- ${email}`, // Plain text body
   };
 
   try {

@@ -1,12 +1,17 @@
 import Image from 'next/image';
 import React from 'react';
 
-const Services: React.FC = () => {
+type servicesProps={
+  servicesRef:React.RefObject<HTMLDivElement | null>
+}
+
+const Services: React.FC<servicesProps> = ({servicesRef}) => {
   
   return (
-    <div className='bg-gradient-to-b from-neutral-700 to-transparent gap-5 py-20 px-5 md:px-20 border-t-2 border-solid border-neutral-600 flex flex-col gap-9'>
+    <div ref={servicesRef} className='bg-gradient-to-b from-neutral-700 to-transparent gap-5 py-20 px-5 md:px-20 border-t-2 border-solid border-neutral-600 flex flex-col gap-9'>
       <h1 className="text-3xl font-extrabold text-primary text-center"><u>SERVICES</u></h1>
-      <p className='text-center text-bodytext text-xs md:text-lg'>With years of experience and knowledge, I have had the privilege to work across a diverse range of projects. Each service I offer is crafted to bring unique and innovative solutions to your needs. Below are the services I specialize in</p>
+                <h1 className='font-bold text-3xl text-center'>What can I do for you ?</h1>
+                <p className='text-center text-bodytext text-xs md:text-lg'>With years of experience and knowledge, I have had the privilege to work across a diverse range of projects. Each service I offer is crafted to bring unique and innovative solutions to your needs. Below are the services I specialize in</p>
       <div className='flex-wrap gap-9 flex justify-center items-center'>
         <div
           style={{ background: 'rgb(225, 225, 225, 0.3)', width:'250px'}}

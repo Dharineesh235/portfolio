@@ -1,8 +1,9 @@
 import React from 'react';
 
-const Skills = () => {
+const Skills = ({skillsRef}:{skillsRef:React.RefObject<HTMLDivElement | null>}) => {
     return (
         <div
+            ref={skillsRef}
             style={{
                 margin: '0 auto',
                 backgroundPosition: 'center',

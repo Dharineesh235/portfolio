@@ -1,23 +1,43 @@
+"use client"
+
 import About from "@/components/About";
 import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 import Main from "@/components/Main";
 import Profile from "@/components/Profile";
 import Projects from "@/components/Projects";
 import Resume from "@/components/Resume";
 import Services from "@/components/Services";
 import Skills from "@/components/Skills";
+import React, { useRef } from "react";
 
 export default function Home() {
+  const profileRef = useRef<HTMLDivElement>(null);
+  const aboutRef = useRef<HTMLDivElement>(null);
+  const resumeRef = useRef<HTMLDivElement>(null);
+  const servicesRef = useRef<HTMLDivElement>(null);
+  const skillsRef = useRef<HTMLDivElement>(null);
+  const projectsRef = useRef<HTMLDivElement>(null);
+  const contactRef = useRef<HTMLDivElement>(null);
+  // const footerRef = useRef<HTMLDivElement>(null);
+
+  const scrolltoView = (ref: React.RefObject<HTMLDivElement | null>) => {
+    ref?.current?.scrollIntoView({ behavior: "smooth" });
+  }
   return (
-    <Main>
-      <Profile/>
-      <About/>
-      <Resume/>
-      <Services/>
-      <Skills/>
-      <Projects/>
-      <Contact/>
+    <Main scrollToView={scrolltoView} profileRef={profileRef}>
+      <Header profileRef={profileRef} aboutRef={aboutRef} resumeRef={resumeRef} servicesRef={servicesRef} skillsRef={skillsRef} projectsRef={projectsRef} contactRef={contactRef} scrolltoView={scrolltoView} />
+      <Profile profileRef={profileRef} resumeRef={resumeRef} projectsRef={projectsRef} scrolltoView={scrolltoView} />
+      <About aboutRef={aboutRef} />
+      <Resume resumeRef={resumeRef} />
+      <Services servicesRef={servicesRef} />
+      <Skills skillsRef={skillsRef} />
+      <Projects projectsRef={projectsRef} />
+      <Contact contactRef={contactRef} />
+      <Footer profileRef={profileRef} scrollToView={scrolltoView} />
     </Main>
+
     // <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
     //   <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
     //     <Image

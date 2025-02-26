@@ -1,9 +1,20 @@
 import React from 'react'
 
-const About = () => {
+const About = ({aboutRef}:{aboutRef:React.RefObject<HTMLDivElement | null>}) => {
+    const date2:Date = new Date();
+    const date1:Date = new Date("2022-10-01");
+    let years = date2.getFullYear() - date1.getFullYear();
+    let months = date2.getMonth() - date1.getMonth();
+  
+    if (months < 0) {
+      years--;
+      months += 12;
+    }
+  
 
     return (
         <div 
+        ref={aboutRef}
         style={{
             margin: '0 auto',
             // borderImage: 'fill 0 linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1))',
@@ -17,7 +28,8 @@ const About = () => {
             <div className='flex flex-col items-center gap-10'>
                 <h1 className='font-bold text-3xl'>Let me introduce myself.</h1>
                 <p className='text-center text-bodytext text-xs md:text-lg'>
-                    I am Full stack developer with, with a great interest in Web developing, Network Security, Frontend, Artificial intelligence and software development. I have curiosity to learn new things related to my field and explore further opportunities. Looking for a great intership to achieve my goals in Computer Science Engineering. I have good management and communication skills.
+                    I am Full stack developer with {years} years {months ? ` and ${months} months `:""} of experience,
+                    with a great interest in Web development, Problem solving Network Security, and software development. I have curiosity to learn new things related to my field and explore further opportunities. I have good management and communication skills.
                 </p>
                 <div className=' grid grid-cols-2 auto-cols-auto text-left gap-y-3'>
                     {/* <div className='flex gap-2 justify-center align-center'> */}

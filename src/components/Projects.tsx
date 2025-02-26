@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 
-const Projects = () => {
+const Projects = ({projectsRef}: {projectsRef:React.RefObject<HTMLDivElement | null>}) => {
     const data = [
         {
             name:"Zomato Clone", 
@@ -11,31 +11,31 @@ const Projects = () => {
         },
         {
             name:"Snake Game", 
-            description:"During my internship, I developed a Zomato Clone, a full-stack food ordering web application designed to provide a seamless experience for users to browse restaurants, explore menus, and place orders online.",
+            description:"I developed a classic Snake Game using Python and Tkinter, providing an engaging and interactive gaming experience. The game follows the traditional mechanics where the snake moves around the screen, eats food to grow, and avoids colliding with itself or the walls.",
             url:"/images/snake_game.jpeg",
             visit:"https://github.com/Dharineesh235/snake_game"
         },
         {
             name:"Book Stack", 
-            description:"During my internship, I developed a Zomato Clone, a full-stack food ordering web application designed to provide a seamless experience for users to browse restaurants, explore menus, and place orders online.",
+            description:"Book Stack is a simple yet efficient book search application built using React.js. The project implements a live search bar that fetches book details dynamically from a public Books API, providing instant results as users type.",
             url:"/images/book_stack.jpeg",
             visit:"https://github.com/Dharineesh235/bookSearch_react"
         },
         {
             name:"Turtle Race",
-            description:"During my internship, I developed a Zomato Clone, a full-stack food ordering web application designed to provide a seamless experience for users to browse restaurants, explore menus, and place orders online.",
+            description:"Turtle Race is a fun and interactive game built using Python, Tkinter, and the Turtle module. The game simulates a race between multiple turtles, where players can place bets on which turtle they think will win. Once the race starts, the turtles move forward randomly, and the winning turtle's name is displayed at the end, letting players know if their bet was successful or not.",
             url:"/images/turtle_race.jpeg",
             visit:"https://github.com/Dharineesh235/turtle_race"
         },
         {
             name:"Day Light Automator", 
-            description:"During my internship, I developed a Zomato Clone, a full-stack food ordering web application designed to provide a seamless experience for users to browse restaurants, explore menus, and place orders online.",
+            description:"Daylight Automator is a smart scheduling system that automates tasks based on the sun’s position. Instead of relying on fixed time schedules, this system dynamically adjusts task execution times according to real-world sunrise and sunset data.",
             url:"/images/day-light.jpg",
             visit:"https://github.com/Dharineesh235/daylight_automator"
         },
     ]
     return (
-        <div id='Projects' className='bg-gradient-to-b from-neutral-700 to-transparent gap-5 py-20 px-5 md:px-20 border-t-2 border-solid border-neutral-600 flex flex-col gap-9'>
+        <div ref={projectsRef} id='Projects' className='bg-gradient-to-b from-neutral-700 to-transparent gap-5 py-20 px-5 md:px-20 border-t-2 border-solid border-neutral-600 flex flex-col gap-9'>
             <h1 className="text-3xl font-extrabold text-primary text-center"><u>PROJECTS</u></h1>
             <h1 className='font-bold text-3xl text-white text-center'>Checkout some of my works.</h1>
             <p className='text-center text-bodytext text-xs md:text-lg'>With years of experience and knowledge, I have had the privilege to work across a diverse range of projects. Each service I offer is crafted to bring unique and innovative solutions to your needs. Below are the services I specialize in</p>
@@ -50,11 +50,11 @@ const Projects = () => {
                         height: '100%',
                         backgroundColor: 'rgba(0, 0, 0, 0.4)' // Example overlay
                     }}></div>
-                    <div className='hover_reveal-child'>
-                        <div className='flex flex-col gap-10 justify-center items-center'>
-                            <h1 className='text-3xl font-black'>{item.name}</h1>
-                            <p className='text-center text-bodytext text-xs md:text-lg'>{item.description}</p>
-                            <div className='bg-primary_transparent p-2 rounded w-1/6 text-center'><a href={item.visit} target='_blank'>VIEW</a></div>
+                    <div className='hover_reveal-child p-2'>
+                        <div className='flex flex-col gap-3 lg:gap-10 justify-center items-center'>
+                            <h1 className='text-sm lg:text-3xl font-black'>{item.name}</h1>
+                            <p className='text-center text-bodytext text-[10px] lg:text-lg'>{item.description}</p>
+                            <div className='text-sm lg:text-lg bg-primary_transparent p-2 rounded w-1/6 text-center'><a href={item.visit} target='_blank'>VIEW</a></div>
                         </div>
                     </div>
                 </div>)}
