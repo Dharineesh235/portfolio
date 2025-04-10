@@ -21,7 +21,9 @@ const Resume:React.FC<resumeProps> = ({resumeRef}) => {
         <div ref={resumeRef} className='bg-gradient-to-b from-neutral-700 to-transparent gap-5 py-20 px-5 md:px-20 border-t-2 border-solid border-neutral-600 flex flex-col gap-9'>
             <h1 className="text-3xl font-extrabold text-primary text-center"><u>RESUME</u></h1>
             <h1 className='font-bold text-3xl text-white text-center'>Have a look at my experience</h1>
-            <p className='text-center text-bodytext text-xs md:text-lg'>With years of experience and knowledge, I have had the privilege to work across a diverse range of projects. Each service I offer is crafted to bring unique and innovative solutions to your needs. Below are the services I specialize in</p>
+            <p className='text-center text-bodytext text-xs md:text-lg'>
+                With a passion for continuous learning and growth, I strive to bring value through dedication, adaptability, and a strong work ethic. I aim to contribute meaningfully in every opportunity while evolving both personally and professionally.
+            </p>
             <div className='grid md:grid-cols-2 gap-9'>
                 {/* HASHh Automations */}
                 <div className='flex flex-col gap-3 bg-dark_transparent rounded p-10 h-fit'>
